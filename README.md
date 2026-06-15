@@ -1,15 +1,15 @@
-# FeverTokens Homebrew Tap
+# ft3-labs Homebrew Tap
 
-Homebrew tap for FeverTokens CLI tools.
+Homebrew tap for FeverTokens / ft3-labs CLIs.
 
 ## Install
 
 ```bash
-brew install fevertokens/tap/fever
+brew install ft3-labs/tap/fever
 ```
 
-That fetches a pre-built single-file binary from the matching
-[`fever-cli` GitHub Release](https://github.com/FeverTokens/fever-cli/releases)
+That fetches a pre-built single-file binary from
+[`fever-cli-releases`](https://github.com/ft3-labs/fever-cli-releases/releases)
 — no Deno toolchain required on the user's machine.
 
 Supported platforms: macOS (Apple Silicon + Intel) and Linux (x86_64 + aarch64).
@@ -25,10 +25,15 @@ brew upgrade fever
 
 ```bash
 brew uninstall fever
-brew untap fevertokens/tap
+brew untap ft3-labs/tap
 ```
 
 ## Source
 
 - CLI source: <https://github.com/FeverTokens/fever-cli>
-- Also published on JSR: <https://jsr.io/@fevertokens/cli>
+- Public binary mirror: <https://github.com/ft3-labs/fever-cli-releases>
+- Also on JSR: <https://jsr.io/@fevertokens/cli>
+
+> `Formula/fever.rb` is regenerated on every stable release by
+> [`release-deno.yml`](https://github.com/ft3-labs/fever-cli/blob/main/.github/workflows/release-deno.yml)
+> in `fever-cli`. Manual edits will be overwritten.
